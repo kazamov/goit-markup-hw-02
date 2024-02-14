@@ -1,3 +1,3 @@
-# goit-markup-hw-01
+# goit-markup-hw-02
 
-Посилання на сторінку - https://kazamov.github.io/goit-markup-hw-01/
+Посилання на сайт - [https://kazamov.github.io/goit-markup-hw-02/](https://kazamov.github.io/goit-markup-hw-02/)
