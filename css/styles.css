@@ -9,10 +9,155 @@
 	--light-color: #f4f4fd;
 	--modal-overlay-color: rgba(46, 47, 66, 0.4);
 	--hero-background-color: rgba(46, 47, 66, 0.7);
-	--white-background-color: #ffffff;
+	--white-color: #ffffff;
 	--modal-background-color: #fcfcfc;
 }
 
 body {
+	font-size: 16px;
 	font-family: 'Roboto', sans-serif;
+	line-height: 1.5;
+	color: var(--text-color);
+}
+
+ul {
+	list-style: none;
+}
+
+/* Typography */
+
+h1,
+.title {
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.07143;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.11112;
+	color: var(--dark-color);
+}
+
+h3 {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	color: var(--dark-color);
+}
+
+.small {
+	font-size: 12px;
+	line-height: 1.16667;
+}
+
+.medium {
+	font-weight: 500;
+}
+
+/* Button */
+
+.button {
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	line-height: 1.5;
+
+	&.button--primary {
+		border: none;
+		background-color: var(--primary-brand-color);
+		box-shadow: 0px 4px 4px 0px #00000026;
+		color: var(--white-color);
+		padding: 16px 32px;
+
+		&:focus,
+		&:hover {
+			background-color: var(--pressed-state-color);
+		}
+	}
+
+	&.button--outlined {
+		padding: 12px 24px;
+		background-color: var(--light-color);
+		border: 1px solid var(--accent-color);
+		color: var(--primary-brand-color);
+		box-shadow: none;
+
+		&:focus,
+		&:hover {
+			background-color: var(--pressed-state-color);
+			border: 1px solid var(--pressed-state-color);
+			box-shadow: 0px 2px 2px 0px #0000001f, 0px 2px 1px 0px #00000014, 0px 3px 1px 0px #0000001a;
+			color: var(--white-color);
+		}
+	}
+}
+
+/* Header */
+
+.header {
+	border-bottom: 1px solid var(--accent-color);
+}
+
+/* Navigation */
+
+.navigation-menu {
+	& .navigation-menu__item a {
+		color: var(--dark-color);
+		font-weight: 500;
+		text-decoration: none;
+
+		&:hover {
+			color: var(--pressed-state-color);
+		}
+	}
+}
+
+.address-list {
+	& .address-list__item a {
+		color: var(--text-color);
+		font-style: normal;
+		font-size: 16px;
+		text-decoration: none;
+
+		&:focus-visible,
+		&:hover {
+			color: var(--pressed-state-color);
+		}
+	}
+}
+
+/* Footer */
+.footer {
+	background-color: var(--dark-color);
+
+	& p {
+		color: var(--light-color);
+	}
+}
+
+/* Studio */
+
+.hero-section {
+	background-color: var(--dark-color);
+
+	& .hero-section__title {
+		color: var(--white-color);
+	}
+}
+
+.team-section {
+	background-color: var(--light-color);
+}
+
+/* Portfolio */
+
+.project-card {
+	& a {
+		color: var(--dark-color);
+		text-decoration: none;
+	}
 }
