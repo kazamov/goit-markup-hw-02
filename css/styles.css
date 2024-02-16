@@ -70,11 +70,6 @@ ul {
 	box-shadow: 0px 4px 4px 0px #00000026;
 	color: var(--white-color);
 	padding: 16px 32px;
-
-	&:focus,
-	&:hover {
-		background-color: var(--pressed-state-color);
-	}
 }
 
 .button.button--primary:focus,
@@ -142,6 +137,7 @@ ul {
 .address-list__item-link {
 	color: var(--text-color);
 	font-style: normal;
+	text-decoration: none;
 }
 
 .address-list__item-link:focus,
